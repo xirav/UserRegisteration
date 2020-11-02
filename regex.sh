@@ -3,7 +3,7 @@
 
 read -p "ENTER YOUR GOOD NAME - " name
 
-pat=^[A-Z0-9]{3,}[ ][a-z]$
+pat=^[A-Z0-9]{3,}[ ][A-za-z0-9]{3,}$
 
 if [[ $name =~ $pat ]]
 then
@@ -11,3 +11,4 @@ then
 else
 	echo "NO"
 fi
+
