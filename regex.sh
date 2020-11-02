@@ -35,3 +35,14 @@ else
 	echo "No"
 fi
 
+read -p "ENTER PASSWORD - " pass
+
+pat3=^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+
+if [[ $pass =~ $pat3 ]]
+then
+	echo "YES"
+else
+	echo "NO"
+fi
+
